@@ -1,17 +1,13 @@
-import { LandingContent } from "@/components/landing-content";
-import { ThemeSwitcher } from "@/components/theme-switcher";
-import { LanguageSwitcher } from "@/components/language-switcher";
+import { HeroSection } from "@/components/landing/hero-section";
+import { AboutSection } from "@/components/landing/about-section";
+import { ArtistsSection } from "@/components/landing/artists-section";
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-background text-foreground">
-      <LandingContent />
-
-      {/* Switchers - bottom right */}
-      <div className="fixed bottom-6 right-6 z-10 flex gap-3">
-        <ThemeSwitcher />
-        <LanguageSwitcher />
-      </div>
+    <main className="relative min-h-screen bg-background text-foreground">
+      <HeroSection />
+      <AboutSection />
+      <ArtistsSection />
     </main>
   );
 }

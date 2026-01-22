@@ -3,6 +3,10 @@ import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { LanguageProvider } from "@/lib/contexts/language-context";
+import { QueryProvider } from "@/lib/contexts/query-provider";
+import { Navigation } from "@/components/layout/navigation";
+import { Footer } from "@/components/layout/footer";
+import { SwitchersBar } from "@/components/layout/switchers-bar";
 
 const jetbrainsMono = JetBrains_Mono({subsets:['latin'],variable:'--font-sans'});
 
@@ -38,7 +42,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
-            {children}
+            <QueryProvider>
+              {children}
+              <Footer />
+              <Navigation />
+              <SwitchersBar />
+            </QueryProvider>
           </LanguageProvider>
         </ThemeProvider>
       </body>

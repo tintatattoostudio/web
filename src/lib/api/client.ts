@@ -2,7 +2,8 @@ import Axios, { AxiosError } from "axios";
 import { z } from "zod";
 import {
   CareBaseSchema,
-  FAQSchema,
+  FAQResponseSchema,
+  FAQArraySchema,
   LandingBaseSchema,
   InstructionsBaseSchema,
   ArtistSchema,
@@ -16,7 +17,7 @@ import {
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "";
 
 const axiosInstance = Axios.create({
-  baseURL: API_URL,
+  baseURL: API_URL + "/api",
 });
 
 export class APIError extends Error {
@@ -100,8 +101,14 @@ export default class API {
 
     return fetchWithErrorHandling(async () => {
       const response = await axiosInstance.get(endpoint);
-      const parsed = parseResponse(FAQSchema, response.data, endpoint);
-      return parsed.data.attributes.section;
+
+      if (Array.isArray(response.data)) {
+        const parsed = parseResponse(FAQArraySchema, response.data, endpoint);
+        return parsed[0]?.attributes.section || [];
+      } else {
+        const parsed = parseResponse(FAQResponseSchema, response.data, endpoint);
+        return parsed.data.attributes.section;
+      }
     }, endpoint);
   }
 

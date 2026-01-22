@@ -16,7 +16,7 @@ export const FAQSectionSchema = z.object({
 });
 export type FAQSection = z.infer<typeof FAQSectionSchema>;
 
-export const FAQSchema = z.object({
+export const FAQResponseSchema = z.object({
   data: z.object({
     attributes: z.object({
       locale: LocalesSchema,
@@ -24,7 +24,17 @@ export const FAQSchema = z.object({
     }),
   }),
 });
-export type FAQ = z.infer<typeof FAQSchema>;
+export type FAQResponse = z.infer<typeof FAQResponseSchema>;
+
+export const FAQArraySchema = z.array(
+  z.object({
+    attributes: z.object({
+      locale: LocalesSchema,
+      section: z.array(FAQSectionSchema),
+    }),
+  })
+);
+export type FAQArray = z.infer<typeof FAQArraySchema>;
 
 export const WebSegmentSchema = z.object({
   title: z.string(),
@@ -104,7 +114,7 @@ export const ArtistSchema = z.object({
         data: z.array(StrapiImageSchema),
       })
       .optional(),
-    locales: LocalesSchema,
+    locales: z.array(LocalesSchema).optional(),
   }),
 });
 export type Artist = z.infer<typeof ArtistSchema>;
