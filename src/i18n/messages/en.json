@@ -1,0 +1,148 @@
+{
+  "care": {
+    "pageTitle": "Tattoo care",
+    "title": "Tattoo care"
+  },
+  "common": {
+    "switchLanguage": "Switch language",
+    "toggleTheme": "Switch theme"
+  },
+  "faq": {
+    "pageTitle": "Frequently asked questions",
+    "sections": {
+      "ageRestrictions": {
+        "qa": {
+          "1": {
+            "answer": "The rule is that you should not donate blood for 1 year after getting a tattoo.",
+            "question": "Can I donate blood after getting a tattoo?"
+          },
+          "2": {
+            "answer": "Tattooing is permitted from the age of sixteen with written parental consent. Without written consent, tattooing is permitted from the age of eighteen. The tattoo artist may ask to see your ID to verify your age. If you do not have your personal identification document with you on the day of tattooing, you may lose your deposit and will not be tattooed.",
+            "question": "What is the minimum age for getting a tattoo?"
+          },
+          "3": {
+            "answer": "To sign the consent form, parents must visit the studio together with the minor. There, they fill out the consent form, provide personal information and submit personal documents for verification. The consent form must be completed and signed at the tattoo studio. <span className='font-bold'>Completing the documents at home or confirming by telephone is not sufficient.</span>",
+            "question": "How does the parental consent process work?"
+          }
+        },
+        "title": "Age restrictions and parental consent"
+      },
+      "booking": {
+        "qa": {
+          "1": {
+            "answer": "Each tattoo is a unique work of art, so the price for each tattoo is determined based on its size, complexity, time and materials. Send us your enquiry and we will be happy to help you.",
+            "question": "What are the prices?"
+          },
+          "2": {
+            "answer": "Write down what you want, the desired size and location on your body. Attach reference photos to your message. For larger tattoos, attach as many photos as possible and explain for each one what you like and what you want to change or keep. Don't be afraid to send as many as possible. The more material we have, the better we can understand what you want and the easier it is for us to make your wishes come true.",
+            "question": "Ordering instructions"
+          },
+          "3": {
+            "answer": "The waiting period depends on each tattoo artist individually, so please contact your tattoo artist for information about the waiting period.",
+            "question": "What is the waiting period?"
+          },
+          "4": {
+            "answer": "Every tattoo, whether small or large, requires a lot of equipment. To ensure the highest quality work and hygiene standards, we use the highest quality materials and products, which come at a price. To meet hygiene standards, we have trained staff to ensure that your tattoo is safe for your health. At the same time, it is important to realise that a tattoo is a work of art that requires years of experience and education in both art and tattooing. Tattoos are not mass-produced consumer goods. They are unique works of art that you will carry with you for the rest of your life, which is why the price of tattoos is comparable to that of works of art.",
+            "question": "Why are tattoos so expensive?"
+          },
+          "5": {
+            "answer": "An advance payment is required to confirm the appointment. In the event of unforeseen circumstances (illness, accident, pregnancy, etc.), the appointment will be rescheduled and the advance payment will be taken into account. The deadline for rescheduling the appointment is at least 7 days before the tattooing. The advance payment is non-refundable under any circumstances, but it can be rescheduled. If you do not have your personal ID on the day of the tattoo, you may lose your deposit and will not be tattooed.",
+            "question": "What about cancelling an appointment?"
+          }
+        },
+        "title": "Ordering and prices"
+      },
+      "common": {
+        "qa": {
+          "1": {
+            "answer": "Location: <br/> Trubarjeva cesta 28, 1000, Ljubljana.<br/> Price list: price by agreement.<br/> Working hours: By agreement.",
+            "question": "Location, price list, working hours"
+          },
+          "2": {
+            "answer": "For general information, please contact us at tattoostudio.tinta@gmail.com.<br />For orders, please contact each tattoo artist individually.",
+            "question": "Contact"
+          },
+          "3": {
+            "answer": "First, you need to have a rough idea of what you want to get tattooed. Based on your preferences, choose a tattoo artist whose style you like best and contact them. See the booking instructions. Before getting tattooed, read the tattooing instructions and customer etiquette. Before deciding on a tattoo, it is always a good idea to consult with the tattoo artist. Discussing your ideas, wishes and expectations will enable better understanding and cooperation between you and the tattoo artist and allow you to create a tattoo that is unique. On the day of your appointment, you will fill out a tattoo consent form, confirm the design, determine the exact location and size of the tattoo, and print the stencil. The tattoo artist will prepare your skin (shave, disinfect) and apply the stencil. Once you have confirmed that everything is as you want it, the tattooing process will begin. Once the tattoo is complete, a protective film is applied over it. Then, carefully follow the aftercare instructions. In rare cases, a tattoo may need to be touched up. If you need a touch-up, contact your tattoo artist and make an appointment for a free correction.",
+            "question": "How does tattooing work?"
+          },
+          "4": {
+            "answer": "Each of our tattoo artists offers a 30-minute free consultation online or in our studio. Before performing the service, the tattoo artist must consult with the client, discuss their wishes and expectations, and determine an approximate price. The risks and possible complications that may arise during tattooing are explained.",
+            "question": "Tattoo consultation"
+          },
+          "5": {
+            "answer": "The pain of a tattoo depends on the location on the body, the size of the tattoo and the amount of shading. As a general rule, tattoos on the torso, palms and feet hurt the most. In any case, tattooing appointments and hours are adjusted according to each client's pain threshold, so there is no need to worry. The tattoo artist will ask you how you are feeling during the tattooing process.",
+            "question": "Which are the most painful areas of the body?"
+          },
+          "6": {
+            "answer": "We do not use pain relief creams.",
+            "question": "Do you use pain relief creams?"
+          }
+        },
+        "title": "General information and contact details"
+      },
+      "fixes": {
+        "qa": {
+          "answer": "Healing is an organic bodily process, which is why tattoo corrections are sometimes necessary. The body perceives pigment as a foreign substance and attempts to digest it through the lymphatic system during the healing process. Sometimes the body manages to break down the pigment particles and flush them out of the body. Especially with delicate, small tattoos or large areas of colour, it often happens that the tattoo is paler in certain areas than in others. If you have followed the aftercare instructions, you are entitled to one free repair within the first 6 months after tattooing. Do not delay and contact your tattoo artist to make your tattoo flawless.",
+          "question": "Repairs"
+        },
+        "title": "Repairs"
+      },
+      "risks": {
+        "description": "It is important to distinguish between the normal inflammatory process after tattooing and the risks and health complications that occur in very rare cases.",
+        "qa": {
+          "1": {
+            "answer": "Allergic reactions to pigment are rare. Inform your tattoo artist if you have any allergies, sensitivity to metals, condoms or latex.",
+            "question": "Allergic reaction"
+          },
+          "2": {
+            "answer": "Granulomas and keloid scars are rare complications of tattooing. In most cases, they are the result of the work of an inexperienced tattoo artist or a pre-existing tendency to develop scar tissue.",
+            "question": "Granulomas and keloid scars"
+          },
+          "3": {
+            "answer": "Due to the health and sanitary conditions in our studio, the risk of infection with blood-borne diseases or bacterial infections is almost impossible. Bacterial infection is a common reaction if you do not follow the aftercare instructions.",
+            "question": "Transmission of blood-borne diseases and bacterial infections (infection)"
+          },
+          "4": {
+            "answer": "Gangrenous diseases, Skin and mucous membrane diseases (dermatitis, vitiligo, psoriasis, etc.), Birthmarks or other pigmented lesions, Systemic diseases, Cardiovascular diseases, Haemophilia and other blood clotting disorders, Diabetes,Immune system inhibitor therapies, Medicines and sports stimulants, Pregnancy and breastfeeding, Drugs and alcohol, Hypersensitivity to latex, nickel, cobalt, chromium and other chemicals and condoms, Allergies, Propensity for keloid scars",
+            "note": "Please contact us if you have any further questions. If you have any of the contraindications listed above, please consult your tattoo artist and/or your specialist doctor before getting a tattoo.",
+            "question": "Contraindications for tattooing"
+          }
+        },
+        "title": "Risks and contraindications "
+      }
+    },
+    "title": "Frequently asked questions"
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved",
+    "apple": "Apple",
+    "google": "Google",
+    "location": "Location"
+  },
+  "instructions": {
+    "content": "Important information before your appointment",
+    "pageTitle": "Instructions before tattooing",
+    "title": "Instructions before tattooing"
+  },
+  "landing": {
+    "about": {
+      "content": "Replace with your content",
+      "title": "About us"
+    },
+    "artists": {
+      "content": "Meet our talented artists",
+      "title": "Our artists"
+    },
+    "hero": {
+      "subtitle": "Ljubljana, Slovenia",
+      "title": "Tinta Tattoo Studio"
+    }
+  },
+  "nav": {
+    "care": "Care",
+    "faq": "Frequently asked questions",
+    "home": "Home",
+    "instructions": "Instructions"
+  }
+}

@@ -4,8 +4,10 @@ import { STUDIO_INFO } from '@/lib/constants';
 import { Map, MapMarker, MarkerContent, MarkerPopup } from '@/components/ui/map';
 import { MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export function Footer() {
+  const t = useTranslations('footer');
   const { lat, lng } = STUDIO_INFO.coordinates;
 
   return (
@@ -44,7 +46,7 @@ export function Footer() {
 
           {/* Map */}
           <div className="flex-1">
-            <h3 className="font-bold text-lg mb-4">Location</h3>
+            <h3 className="font-bold text-lg mb-4">{t('location')}</h3>
             <div className="relative w-full h-[400px] rounded-md overflow-hidden border border-border">
               <Map
                 center={[lng, lat]}
@@ -77,7 +79,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="hover:underline text-blue-600 dark:text-blue-400"
                   >
-                    Google
+                    {t('google')}
                   </a>
                   <span className="text-muted-foreground">|</span>
                   <a
@@ -86,7 +88,7 @@ export function Footer() {
                     rel="noopener noreferrer"
                     className="hover:underline text-blue-600 dark:text-blue-400"
                   >
-                    Apple
+                    {t('apple')}
                   </a>
                 </div>
               </div>
@@ -96,7 +98,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} {STUDIO_INFO.name}. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {STUDIO_INFO.name}. {t('allRightsReserved')}.</p>
         </div>
       </div>
     </footer>

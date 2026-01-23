@@ -18,8 +18,8 @@ export const STUDIO_INFO = {
 };
 
 export const NAV_LINKS = [
-  { href: "/", label: { en: "Home", sl: "Domov" } },
-  { href: "/instructions", label: { en: "Instructions", sl: "Navodila" } },
-  { href: "/care", label: { en: "Care", sl: "Nega" } },
-  { href: "/faq", label: { en: "FAQ", sl: "Pogosta vprašanja" } }
-];
+  { href: "/", labelKey: "nav.home" },
+  { href: "/instructions", labelKey: "nav.instructions" },
+  { href: "/care", labelKey: "nav.care" },
+  { href: "/faq", labelKey: "nav.faq" }
+] as const;

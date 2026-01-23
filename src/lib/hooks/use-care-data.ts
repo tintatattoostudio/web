@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { useLanguage } from '@/lib/contexts/language-context';
+import { useLocale } from 'next-intl';
 import API from '@/lib/api/client';
 
 export function useCareData() {
-  const { language } = useLanguage();
+  const locale = useLocale();
 
   return useQuery({
-    queryKey: ['care', language],
-    queryFn: () => API.getCare(language === 'en'),
+    queryKey: ['care', locale],
+    queryFn: () => API.getCare(locale === 'en'),
   });
 }

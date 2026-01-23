@@ -6,15 +6,29 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import type { QA } from '@/lib/api/types';
 import { motion } from 'framer-motion';
 import { staggerContainer, staggerChild } from '@/lib/animations/variants';
+import { FAQSectionQA } from '@/lib/types';
 
-type FAQAccordionProps = {
-  items: QA[];
-};
+export function FAQAccordion({ items }: { items: FAQSectionQA[] }) {
+  const getContent = (item: FAQSectionQA) => {
+    if (item.type === "list") {
+      return (
+        <ul className="list-disc pl-5 space-y-2">
+          {item.answer.split(',').map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
+      );
+    }
 
-export function FAQAccordion({ items }: FAQAccordionProps) {
+    if (item.type === "html") {
+      return <div dangerouslySetInnerHTML={{ __html: item.answer }} />;
+    }
+
+    return <p>{item.answer}</p>;
+  };
+
   return (
     <motion.div variants={staggerContainer} initial="hidden" animate="visible">
       <Accordion className="w-full">
@@ -24,8 +38,8 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
               <AccordionTrigger className="text-left text-base py-4">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground whitespace-pre-line text-sm">
-                {item.answer}
+              <AccordionContent className="text-muted-foreground whitespace-pre-line text-base">
+                {getContent(item)}
               </AccordionContent>
             </AccordionItem>
           </motion.div>

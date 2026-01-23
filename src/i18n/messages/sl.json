@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Domov",
+    "instructions": "Navodila",
+    "care": "Nega",
+    "faq": "Pogosta vprašanja"
+  },
+  "landing": {
+    "hero": {
+      "title": "Tinta Tattoo Studio",
+      "subtitle": "Ljubljana, Slovenija"
+    },
+    "about": {
+      "title": "O nas",
+      "content": "Nadomestite z vašo vsebino"
+    },
+    "artists": {
+      "title": "Naši umetniki",
+      "content": "Spoznajte naše talentirane umetnike"
+    }
+  },
+  "instructions": {
+    "title": "Navodila pred tetovažo",
+    "pageTitle": "Navodila pred tetovažo",
+    "content": "Pomembne informacije pred vašim terminom",
+    "segments": []
+  },
+  "care": {
+    "title": "Nega tetovaže",
+    "pageTitle": "Nega tetovaže",
+    "sections": []
+  },
+  "faq": {
+    "title": "Pogosta vprašanja",
+    "pageTitle": "Pogosta vprašanja",
+    "sections": {
+      "common": {
+        "title": "Splošne informacije in kontakt",
+        "qa": {
+          "1": {
+            "question": "Lokacija, cenik, delavnik",
+            "answer": "Lokacija: <br/> Trubarjeva cesta 28, 1000, Ljubljana.<br/> Cenik: cena po dogovoru.<br/> Delavnik: Po dogovoru."
+          },
+          "2": {
+            "question": "Kontakt",
+            "answer": "Za vse splošne informacije nam pišite na naš e-mail naslov tattoostudio.tinta@gmail.com.<br />Za naročanje pišite vsakemu tetoverju posebej."
+          },
+          "3": {
+            "question": "Kako poteka tetoviranje?",
+            "answer": "Najprej morate imeti okvirno idejo, kaj želite imeti tetovirano. Glede na svoje želje izberete tetoverja, katerega stil vam je najbolj všeč in ga kontaktirajte. Glejte navodila za booking. Pred tetoviranjem si poglejte navodila za tetoviranje in bonton za stranke. Preden se odločiš za tetovažo, je vedno dobro opraviti posvet s tetoverjem. Pogovor o svojih idejah, željah in pričakovanjih bo omogočil boljše razumevanje in sodelovanje med vam in tetoverjem ter vam omogočil ustvarjanje tetovaže, ki bo edinstvena. Na dan termina se izpolni soglasje za tetoviranje, potrdi se design, določi točno mesto in velikost tetovaže in natisne se stencil. Tetover vašo kožo pripravi (pobrije, razkuži) in nalepi stencil. Po vaši potrditvi, da je vse tako kot želite, se prične postopek tetoviranja. Po končanem tetoviranju se čez tatu zalepi zaščitna folija. Nato natančno sledite navodilom za nego. V redkih primerih tetovaža potrebuje popravke. V primeru, da potrebujete popravek, kontaktirajte svojega tetoverja in se naročite na brezplačno popravilo."
+          },
+          "4": {
+            "question": "Posvet za tetoviranje",
+            "answer": "Vsak naš tetover nudi 30 minutni brezplačni posvet preko spleta ali v našem studiu. Pred izvajanjem storitve mora tetover opraviti posvet s stranko, pogovorita se o željah, pričakovanjih in določi se okvirna cena. Pojasnijo se tveganja in morebitni zapleti, ki se lahko pojavijo pri tetoviranju."
+          },
+          "5": {
+            "question": "Katera so najbolj boleča mesta na telesu?",
+            "answer": "Bolečina tetovaže je odvisna od mesta na telesu, velikosti tetovaže in količine osenčenih delov. Splošno pravilo je, da najbolj bolijo tetovaže na trupu, na področju dlani in stopal. V vsakem primeru, se termini in ure tetoviranja prilagajajo glede na prag bolečine vsake stranke, tako da naj vas ne skrbi. Tetover vas bo zato med tetoviranjem spraševal o vašem počutju."
+          },
+          "6": {
+            "question": "Ali uporabljate protibolečinske kreme?",
+            "answer": "Pri nas protibolečinskih krem ne uporabljamo."
+          }
+        }
+      },
+      "risks": {
+        "title": "Tveganja in kontraindikacije ",
+        "description": "Pomembno je ločiti normalen vnetni proces po tetoviranju in tveganja ter zdravstvene komplikacije, ki se pojavljajo v zelo redkih primerih.",
+        "qa": {
+          "1": {
+            "question": "Alergijska reakcija",
+            "answer": "Alergijske reakcije na pigment so redek pojav. Obvestite tetoverja če imate kakršnokoli alergijo, občutljivost na kovine, prezervative ali lateks."
+          },
+          "2": {
+            "question": "Granulomi in keloidne brazgotine",
+            "answer": "Granulomi in keloidne brazgotine so redek zaplet pri tetoviranju. V večini primerov so posledica dela neizkušenega tetoverja ali pa predhodne nagnjenosti k zabrazgotinjenju tkiva."
+          },
+          "3": {
+            "question": "Prenos krvno prenosljivih bolezni in bakterijske okužbe (infekcija)",
+            "answer": "Zaradi upoštevanja zdravstveno-sanitarnih pogojev v našem studiu je tveganje za okužbo s krvno prenosljivimi boleznimi ali bakterijska okužba skoraj nemogoča. Bakterijska okužba je pogosta reakcija, če se ne držite navodil za nego po tetoviranju."
+          },
+          "4": {
+            "question": "Kontraindikacije za tetoviranje",
+            "answer": "Gangrenska obolenja,Bolezni kože in sluznic (dermatitis, vitiligo, luskavica itd.),Znamenja ali druge pigmentne lezije,Sistemske bolezni,Srčno-žilne bolezni,Hemofilija in druge bolezni strjevanja krvi,Diabetes,Terapije z zaviralci imunskega sistema,Zdravila in športna poživila,Nosečnost in dojenje,Droge in alkohol,Preobčutljivost na lateks, nikelj, kobalt, krom in ostale kemikalije ter prezervative,Alergije,Nagnjenost h keloidnim brazgotinam",
+            "note": "Za vsa dodatna vprašanja se prosim obrnite na nas. Če imate katerega od prej naštetihkontraindikacij se pred tetoviranjem obrnite na vašega tetoverja in/ali vašega zdravnika specialista."
+          }
+        }
+      },
+      "ageRestrictions": {
+        "title": "Starostne omejitve in dovoljenje staršev",
+        "qa": {
+          "1": {
+            "question": "Ali lahko darujem kri po tetoviranju?",
+            "answer": "Velja pravilo, da se 1 leto po narejeni tetovaži ne bi smelo darovati krvi."
+          },
+          "2": {
+            "question": "Kakšna je starost pri kateri se lahko tetoviram?",
+            "answer": "Tetoviranje je dovoljeno s šestnajstim letom starosti, s pisnim dovoljenjem staršev. Brez pisnega dovoljenja, je tetoviranje dovoljeno z osemnajstim letom starosti. Tetover lahko od vas zahteva vpogled v osebni dokument za preverjanje ustrezne starosti. V primeru, da na dan tetoviranja nimate osebnega dokumenta lahko izgubite avans in ne boste tetovirani."
+          },
+          "3": {
+            "question": "Kako poteka podpis dovoljenja staršev?",
+            "answer": "Za podpis dovoljenja morajo starši skupaj z mladoletnikom obiskati studio. Tam izpolnijo dovoljenje in pustijo osebne podatke ter predložijo osebne dokumente za overitev podatkov. Dovoljenje mora biti izpolnjeno in podpisano v tatu studiu. <span className='font-bold'>Izpolnitev dokumentov doma ali potrditev po telefonu ne zadostuje.</span>"
+          }
+        }
+      },
+      "booking": {
+        "title": "Naročanje in cene",
+        "qa": {
+          "1": {
+            "question": "Kakšne so cene?",
+            "answer": "Vsak tatu je unikatno delo, zato je cena za vsak tatu določena glede na velikost, kompleksnost, čas in material. Pošljite nam povpraševanje in z veseljem vam pomagamo."
+          },
+          "2": {
+            "question": "Navodila za naročanje",
+            "answer": "Napiši kaj želiš imeti, željeno velikost in lokacijo na telesu. V sporočilo priloži referenčne fotografije. Za večje tetovaže priloži čim več fotografij in za vsako obrazloži, kaj ti je všeč in kaj želiš spremeniti, kaj obdržati. Ne se bati poslati čim več. Več, ko imamo materiala, boljši občutek dobimo kaj želiš in ti želje lažje uresničimo."
+          },
+          "3": {
+            "question": "Kakšna je čakalna doba?",
+            "answer": "Čakalna doba je odvisna od vsakega tetoverja posebej, zato se za informacije o čakalni dobi obrnite na svojega tetoverja."
+          },
+          "4": {
+            "question": "Zakaj so tetovaže tako drage?",
+            "answer": "Vsaka tetovaža, majhna ali velika, zahteva veliko opreme. Da zagotovimo najkvalitetnejše delo in higienske standarde, uporabljamo najkvalitetnejše materiale in proizvode, ki imajo svojo ceno. Za izpolnjevanje higienskih standardov imamo usposobljen kader, da imate tetovažo, varno za zdravje. Hkrati se je potrebno zavedati, da je tetovaža umetniško delo, ki zajema večletne izkušnje in izobrazbo tako na umetniškem, kot tetovrskem področju. Tetovaža ne spada med masovno potrošniško proizvodnjo. Je unikatno delo, ki ga nosite celo življenje, zato je cena tetovaž primerljiva umetninam."
+          },
+          "5": {
+            "question": "Kako je z odpovedjo termina?",
+            "answer": "Za potrditev termina je potrebno plačilo avansa. V primeru nepredvidenih dogodkov (bolezni, nesreče, nosečnost, ipd.) se termin prestavi in se upošteva že plačani avans. Rok za prestavitev termina je vsaj 7 dni pred tetoviranjem. Avans se v nobenem primeru ne vrača, lahko pa se ga prestavi. V primeru, da na dan tetoviranja nimate osebnega dokumenta lahko izgubite avans in ne boste tetovirani."
+          }
+        }
+      },
+      "fixes": {
+        "title": "Popravila",
+        "qa": {
+          "question": "Popravila",
+          "answer": "Celjenje je organski telesni proces, zato so včasih potrebna popravila tetovaže. Telo pigment zazna kot tujek in ga želi skozi proces celjenja prebaviti z limfnim sistemom. Včasih telesu uspe razgraditi delce barve in jih prečistiti čez telo. Še posebej pri delikatnih, majhnih tetovažah ali pa velikih barvnih površinah se rado zgodi, da je tetovaža na določenih delih bolj bleda, kot drugje. Če ste sledili navodilom za nego, imate pri nas prvih 6 mesecev po tetoviranju eno popravilo brezplačno. Ne odlašajte in kontaktirajte svojega tetoverja, da vam tetovažo naredi brezhibno."
+        }
+      }
+    }
+  },
+  "footer": {
+    "location": "Lokacija",
+    "google": "Google",
+    "apple": "Apple",
+    "allRightsReserved": "Vse pravice pridržane"
+  },
+  "common": {
+    "toggleTheme": "Preklopi temo",
+    "switchLanguage": "Preklopi jezik"
+  },
+  "artists": []
+}

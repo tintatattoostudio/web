@@ -41,7 +41,7 @@ export function ArtistsSection() {
 
       <motion.div
         variants={staggerContainer}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        className="flex flex-row items-center justify-center gap-4"
       >
         {artistsData.map((artist) => (
           <motion.div key={artist.attributes.artist} variants={staggerChild}>

@@ -6,13 +6,17 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeInUp } from '@/lib/animations/variants';
 import { STUDIO_INFO } from '@/lib/constants';
+import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
+  const t = useTranslations('landing.hero');
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const init = () => setMounted(true);
+
+    init();
   }, []);
 
   if (!mounted) {
@@ -66,7 +70,7 @@ export function HeroSection() {
           {STUDIO_INFO.name}
         </h1>
         <p className="text-xl md:text-3xl text-muted-foreground font-light">
-          Ljubljana, Slovenia
+          {t('subtitle')}
         </p>
       </motion.div>
     </div>

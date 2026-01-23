@@ -1,16 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { useLanguage } from '@/lib/contexts/language-context';
+import { useTranslations } from 'next-intl';
 import { NAV_LINKS } from '@/lib/constants';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Menu } from 'lucide-react';
 import { useMediaQuery } from '@/lib/hooks/use-media-query';
+import { Link } from '@/i18n/routing';
 
 export function Navigation() {
-  const { language } = useLanguage();
+  const t = useTranslations();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopOpen, setDesktopOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -27,7 +27,7 @@ export function Navigation() {
           }}
           className="text-base font-medium hover:underline transition-all"
         >
-          {link.label[language]}
+          {t(link.labelKey)}
         </Link>
       ))}
     </nav>
