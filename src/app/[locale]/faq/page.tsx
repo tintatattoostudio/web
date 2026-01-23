@@ -4,6 +4,30 @@ import { AnimatedSection } from '@/components/sections/animated-section';
 import { PageLayout } from '@/components/layout/page-layout';
 import { FAQSection } from '@/lib/types';
 import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'faq' });
+
+  const description =
+    locale === 'en'
+      ? 'Frequently asked questions about tattoos at Tinta Tattoo Studio. Information about pricing, booking, age restrictions, care instructions, and more.'
+      : 'Pogosta vprašanja o tetovažah v Tinta Tattoo Studio. Informacije o cenah, naročanju, starostnih omejitvah, navodilih za nego in več.';
+
+  return {
+    title: t('title'),
+    description,
+    openGraph: {
+      title: t('title'),
+      description
+    }
+  };
+}
 
 export default async function FAQPage() {
   const t = await getTranslations('faq');

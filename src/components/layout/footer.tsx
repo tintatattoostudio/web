@@ -1,9 +1,8 @@
 'use client';
 
 import { STUDIO_INFO } from '@/lib/constants';
-import { Map, MapMarker, MarkerContent, MarkerPopup } from '@/components/ui/map';
+import { Map, MapMarker, MarkerContent } from '@/components/ui/map';
 import { MapPin } from 'lucide-react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export function Footer() {
@@ -24,6 +23,12 @@ export function Footer() {
               <br />
               {STUDIO_INFO.country}
             </p>
+
+            <br />
+            <a className="text-sm hover:underline transition-all" href="mailto:tattoostudio.tinta@gmail.com">tattoostudio.tinta@gmail.com</a>
+            <br />
+            <br />
+
             <div className="flex flex-row gap-2">
               <a
                 href={STUDIO_INFO.social.facebook}
@@ -72,6 +77,7 @@ export function Footer() {
                   <br />
                   {STUDIO_INFO.country}
                 </p>
+
                 <div className="flex gap-2">
                   <a
                     href={STUDIO_INFO.mapsLinks.google}

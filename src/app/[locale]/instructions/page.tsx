@@ -3,6 +3,25 @@ import { AnimatedSection } from '@/components/sections/animated-section';
 import { PageLayout } from '@/components/layout/page-layout';
 import { getTranslations } from 'next-intl/server';
 import { InstructionsSection } from '@/lib/types';
+import { Metadata } from 'next';
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'instructions' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description')
+    }
+  };
+}
 
 export default async function InstructionsPage() {
   const t = await getTranslations("instructions");

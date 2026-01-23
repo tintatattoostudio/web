@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { generateMetadata as generateSEOMetadata, generateStructuredData } from '@/lib/metadata';
 
 import "../globals.css";
 
@@ -23,10 +24,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Tinta Tattoo Studio",
-  description: "Tinta Tattoo Studio - Ljubljana, Slovenia",
-};
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return generateSEOMetadata(locale);
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -48,8 +53,16 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const structuredData = generateStructuredData(locale);
+
   return (
     <html lang={locale} className={jetbrainsMono.variable} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"

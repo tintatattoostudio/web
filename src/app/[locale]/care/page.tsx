@@ -4,6 +4,25 @@ import { AnimatedSection } from '@/components/sections/animated-section';
 import { PageLayout } from '@/components/layout/page-layout';
 import { CareSection } from '@/lib/types';
 import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'care' });
+
+  return {
+    title: t('title'),
+    description: t('sections.cleaning.list.description'),
+    openGraph: {
+      title: t('title'),
+      description: t('sections.cleaning.list.description')
+    }
+  };
+}
 
 export default async function CarePage() {
   const t = await getTranslations('care');

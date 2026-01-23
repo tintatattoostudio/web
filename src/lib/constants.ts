@@ -12,8 +12,8 @@ export const STUDIO_INFO = {
     apple: "https://maps.apple/p/tThtyHgn6PL.ML"
   },
   social: {
-    facebook: "https://facebook.com/tintatattoo", // Update with actual URL
-    instagram: "https://instagram.com/tintatattoo" // Update with actual URL
+    facebook: "https://www.facebook.com/profile.php?id=61554577949770",
+    instagram: "https://instagram.com/tinta_tattoostudio"
   }
 };
 
