@@ -1,32 +1,38 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
-import { FloatingNav } from "@/components/layout/floating-nav";
-import { MobileNav } from "@/components/layout/mobile-nav";
-import { Footer } from "@/components/layout/footer";
-import { LocaleSync } from "@/components/layout/locale-sync";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono, JetBrains_Mono } from 'next/font/google';
+import { ThemeProvider } from '@/components/theme-provider';
+import { FloatingNav } from '@/components/layout/floating-nav';
+import { MobileNav } from '@/components/layout/mobile-nav';
+import { Footer } from '@/components/layout/footer';
+import { LocaleSync } from '@/components/layout/locale-sync';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { generateMetadata as generateSEOMetadata, generateStructuredData } from '@/lib/metadata';
+import {
+  generateMetadata as generateSEOMetadata,
+  generateStructuredData,
+} from '@/lib/metadata';
 
-import "../globals.css";
+import '../globals.css';
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-sans' });
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export async function generateMetadata({
-  params
+  params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
@@ -40,7 +46,7 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -57,14 +63,25 @@ export default async function LocaleLayout({
   const structuredData = generateStructuredData(locale);
 
   return (
-    <html lang={locale} className={jetbrainsMono.variable} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={jetbrainsMono.variable}
+      suppressHydrationWarning
+    >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <script
+          defer
+          data-domain="tinta.tattoo"
+          src="https://plausible.aerio.cloud/js/script.outbound-links.js"
+        ></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

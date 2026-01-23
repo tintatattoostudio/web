@@ -56,7 +56,7 @@ const localeMetadata: Record<string, LocaleMetadata> = {
   }
 };
 
-const siteUrl = 'https://next.tinta.tattoo'; // Update with actual domain
+const siteUrl = 'https://tinta.tattoo'; // Update with actual domain
 
 export function generateMetadata(locale: string): Metadata {
   const meta = localeMetadata[locale] || localeMetadata.en;

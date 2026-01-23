@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://next.tinta.tattoo/sitemap.xml
+Sitemap: https://tinta.tattoo/sitemap.xml
