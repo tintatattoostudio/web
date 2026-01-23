@@ -12,11 +12,12 @@
     },
     "about": {
       "title": "O nas",
-      "content": "Nadomestite z vašo vsebino"
+      "content": "Smo ekipa izkušenih tetoverjev, ki vidimo umetnost kot sredstvo izražanja in povezovanja. Najbolj pomembno nam je, da ustvarjamo kvalitetne tetovaže, ki se dobro obdržijo skozi celo življenje. V našem studiu se držimo najvišjih higienskih standardov, da vam omogočamo tetovažo varno za vaše zdravje."
     },
     "artists": {
       "title": "Naši umetniki",
-      "content": "Spoznajte naše talentirane umetnike",
+      "content1": "Nenehno premikamo meje ustvarjalnosti, iščemo nove načine za eksperimentiranje in razmišljanje izven okvirjev. Všeč so nam inovacije, sprejemanje nekonvencionalnih idej in tehnik za uresničitev vaše vizije. Stalno vlagamo v kakovostni razvoj in strokovno znanje naše ekipe.",
+      "content2": "Naše raznoliko ozadje in umetniški slogi nam omogočajo, da ustrežemo širokemu spektru preferenc. Vemo, da je vsak posameznik edinstven, zato se trudimo, da vsakemu ustvarimo unikatno umetnino oblikovano posebej zanj. Ne glede na to, ali iščete tradicionalno poslikavo ali sodobno mojstrovino, imamo strokovno znanje in domišljijo, da presežemo vaša pričakovanja.",
       "list": {
         "lana": {
           "name": "Lana",

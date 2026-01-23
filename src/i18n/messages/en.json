@@ -201,11 +201,12 @@
   },
   "landing": {
     "about": {
-      "content": "Replace with your content",
+      "content": "We are a team of experienced tattoo artists who see art as a means of expression and connection. The most important thing for us is to create quality tattoos that last a lifetime. In our studio, we adhere to the highest hygiene standards to provide you with a tattoo that is safe for your health.",
       "title": "About us"
     },
     "artists": {
-      "content": "Meet our talented artists",
+      "content1": "We are constantly pushing the boundaries of creativity, looking for new ways to experiment and think outside the box. We love innovation, embracing unconventional ideas and techniques to bring your vision to life. We constantly invest in quality development and the expertise of our team.",
+      "content2": "Our diverse backgrounds and artistic styles allow us to cater to a wide range of preferences. We know that each individual is unique, so we strive to create a unique piece of art designed specifically for them. Whether you are looking for a traditional painting or a contemporary masterpiece, we have the expertise and imagination to exceed your expectations.",
       "list": {
         "lana": {
           "bio": "My tattoo style is defined by a variety of lines, lots of black areas, strong contrasts, fine details and soft shadows. I enjoy creating a variety of motifs, which I can add my own touch to and thus present in my own unique way. I am fascinated by mythological and mystical themes, I try to bring elements of magic and nature into my tattoos. The goal of my tattoos is to be as fluid and harmonious as possible with every body I get on canvas.",

@@ -32,7 +32,10 @@ export function ArtistsSection() {
           {t("artists.title")}
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
-          {t("artists.content")}
+          {t("artists.content1")}
+        </p>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
+          {t("artists.content2")}
         </p>
       </div>
 
