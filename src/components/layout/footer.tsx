@@ -4,6 +4,7 @@ import { STUDIO_INFO } from '@/lib/constants';
 import { Map, MapMarker, MarkerContent } from '@/components/ui/map';
 import { MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -105,6 +106,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} {STUDIO_INFO.name}. {t('allRightsReserved')}.</p>
+          <p className='text-[10px]'>Made with {"<3"} by <Link className='underline' href='https://aiken.si' target='_blank'>Aiken</Link></p>
         </div>
       </div>
     </footer>
