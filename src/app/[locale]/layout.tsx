@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Footer } from "@/components/layout/footer";
+import { LocaleSync } from "@/components/layout/locale-sync";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -66,11 +67,12 @@ export default async function LocaleLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
+            <LocaleSync />
             {children}
             <Footer />
             <div className="hidden md:block">
