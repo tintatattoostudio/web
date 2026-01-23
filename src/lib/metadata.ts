@@ -88,20 +88,11 @@ export function generateMetadata(locale: string): Metadata {
       title: meta.title,
       description: meta.description,
       siteName: STUDIO_INFO.name,
-      images: [
-        {
-          url: `${siteUrl}/banner.png`,
-          width: 1200,
-          height: 630,
-          alt: `${STUDIO_INFO.name} - Professional Tattoo Studio`
-        }
-      ]
     },
     twitter: {
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: [`${siteUrl}/banner.png`]
     },
     robots: {
       index: true,
