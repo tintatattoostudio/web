@@ -5,7 +5,7 @@ import { PageLayout } from "@/components/layout/page-layout";
 
 export default function Page() {
   return (
-    <PageLayout>
+    <PageLayout showLogo={true}>
       <main className="relative min-h-screen text-foreground">
         <HeroSection />
         <AboutSection />

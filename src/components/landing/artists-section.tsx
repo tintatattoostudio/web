@@ -78,7 +78,7 @@ export function ArtistsSection() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, margin: "0px 0px -100px 0px" }}
         variants={artistsStaggerContainer}
         className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8"
       >

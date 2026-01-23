@@ -3,15 +3,19 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { STUDIO_INFO } from '@/lib/constants';
 
 type PageLayoutProps = {
   children: React.ReactNode;
+  showLogo?: boolean;
 };
 
-export function PageLayout({ children }: PageLayoutProps) {
+export function PageLayout({ children, showLogo = false }: PageLayoutProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { scrollY } = useScroll();
+  const logoOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   useEffect(() => {
     const init = () => setMounted(true);
@@ -41,16 +45,21 @@ export function PageLayout({ children }: PageLayoutProps) {
         }}
       />
 
-      <div className="fixed top-8 left-8 z-10">
-        <Image
-          src={logoSrc}
-          alt={STUDIO_INFO.name}
-          width={200}
-          height={60}
-          className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
-          priority
-        />
-      </div>
+      {showLogo && (
+        <motion.div
+          style={{ opacity: logoOpacity }}
+          className="fixed top-8 left-8 z-10"
+        >
+          <Image
+            src={logoSrc}
+            alt={STUDIO_INFO.name}
+            width={200}
+            height={60}
+            className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
+            priority
+          />
+        </motion.div>
+      )}
 
       {children}
     </div>
