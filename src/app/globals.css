@@ -130,3 +130,34 @@
     @apply hidden!;
   }
 }
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 dark:bg-black/30 dark:border-white/10;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-xl bg-white/80 border border-white/20 dark:bg-black/60 dark:border-white/10;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

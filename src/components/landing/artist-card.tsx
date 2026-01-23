@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { scaleOnHover } from '@/lib/animations/variants';
+import { magneticHover, staggerFadeIn, staggerChild } from '@/lib/animations/variants';
 import { Artist } from '@/lib/types';
 
 type ArtistCardProps = {
@@ -18,17 +18,25 @@ export function ArtistCard({ artist }: ArtistCardProps) {
     <motion.div
       initial="rest"
       whileHover="hover"
-      variants={scaleOnHover}
+      variants={magneticHover}
+      className="will-change-transform"
     >
-      <Card className="overflow-hidden h-full border-none shadow-md hover:shadow-2xl transition-shadow duration-400">
-        <div className="relative w-full aspect-square">
+      <Card className="overflow-hidden h-full glass shadow-lg hover:shadow-2xl transition-shadow duration-500 max-w-sm">
+        <motion.div
+          variants={{
+            rest: { scale: 1 },
+            hover: { scale: 1.05 }
+          }}
+          transition={{ duration: 0.5 }}
+          className="relative w-full aspect-square overflow-hidden"
+        >
           <Image
             src={picture}
             alt={name}
             fill
-            className="object-cover"
+            className="object-cover will-change-transform"
           />
-        </div>
+        </motion.div>
 
         <CardHeader className="pb-3">
           <CardTitle className="text-xl md:text-2xl font-semibold">{name}</CardTitle>
@@ -40,13 +48,20 @@ export function ArtistCard({ artist }: ArtistCardProps) {
           </p>
 
           {styles.length > 0 && (
-            <div className="flex flex-wrap gap-2">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={staggerFadeIn}
+              className="flex flex-wrap gap-2"
+            >
               {styles.map((style, index) => (
-                <Badge key={index} variant="secondary" className="text-xs">
-                  {style}
-                </Badge>
+                <motion.div key={index} variants={staggerChild}>
+                  <Badge variant="secondary" className="text-xs">
+                    {style}
+                  </Badge>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           )}
         </CardContent>
       </Card>

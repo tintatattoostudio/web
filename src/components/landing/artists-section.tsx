@@ -7,6 +7,18 @@ import { motion } from 'framer-motion';
 import { Artist } from '@/lib/types';
 import { useTranslations } from 'next-intl';
 
+// Updated stagger timing for smoother artist card animations
+const artistsStaggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+};
+
 export function ArtistsSection() {
   const t = useTranslations("landing");
 
@@ -27,21 +39,39 @@ export function ArtistsSection() {
 
   return (
     <AnimatedSection variants={staggerContainer} className="container mx-auto px-4 py-24 md:py-32">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-semibold mb-6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={staggerContainer}
+        className="text-center mb-16"
+      >
+        <motion.h2
+          variants={staggerChild}
+          className="text-3xl md:text-5xl font-semibold mb-6"
+        >
           {t("artists.title")}
-        </h2>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
+        </motion.h2>
+        <motion.p
+          variants={staggerChild}
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed"
+        >
           {t("artists.content1")}
-        </p>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
+        </motion.p>
+        <motion.p
+          variants={staggerChild}
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed"
+        >
           {t("artists.content2")}
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       <motion.div
-        variants={staggerContainer}
-        className="flex flex-row items-center justify-center gap-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={artistsStaggerContainer}
+        className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8"
       >
         {artists.map((artist) => (
           <motion.div key={artist.name} variants={staggerChild}>

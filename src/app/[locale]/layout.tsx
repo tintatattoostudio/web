@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Navigation } from "@/components/layout/navigation";
+import { FloatingNav } from "@/components/layout/floating-nav";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { Footer } from "@/components/layout/footer";
-import { SwitchersBar } from "@/components/layout/switchers-bar";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -60,8 +60,12 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             {children}
             <Footer />
-            <Navigation />
-            <SwitchersBar />
+            <div className="hidden md:block">
+              <FloatingNav />
+            </div>
+            <div className="block md:hidden">
+              <MobileNav />
+            </div>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
