@@ -2,40 +2,37 @@
 
 import { AnimatedSection } from '@/components/sections/animated-section';
 import { ArtistCard } from './artist-card';
-import { useLandingData } from '@/lib/hooks/use-landing-data';
-import { useArtistsData } from '@/lib/hooks/use-artists-data';
-import { Skeleton } from '@/components/ui/skeleton';
 import { staggerContainer, staggerChild } from '@/lib/animations/variants';
 import { motion } from 'framer-motion';
+import { Artist } from '@/lib/types';
+import { useTranslations } from 'next-intl';
 
 export function ArtistsSection() {
-  const { data: landingData, isLoading: landingLoading } = useLandingData();
-  const { data: artistsData, isLoading: artistsLoading } = useArtistsData();
+  const t = useTranslations("landing");
 
-  if (landingLoading || artistsLoading) {
-    return (
-      <section className="container mx-auto px-4 py-20">
-        <Skeleton className="h-12 w-64 mb-6 mx-auto" />
-        <Skeleton className="h-24 w-full max-w-2xl mb-12 mx-auto" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[...Array(3)].map((_, i) => (
-            <Skeleton key={i} className="h-96 w-full" />
-          ))}
-        </div>
-      </section>
-    );
-  }
-
-  if (!landingData || !artistsData) return null;
+  const artists: Array<Artist> = [
+    {
+      name: t("artists.list.lana.name"),
+      bio: t("artists.list.lana.bio"),
+      styles: Array.from({ length: 3 }, (_, i) => t(`artists.list.lana.styles.${i + 1}`)),
+      picture: '/lana.jpg',
+    },
+    {
+      name: t("artists.list.milly.name"),
+      bio: t("artists.list.milly.bio"),
+      styles: Array.from({ length: 2 }, (_, i) => t(`artists.list.milly.styles.${i + 1}`)),
+      picture: '/milly.jpg',
+    },
+  ]
 
   return (
     <AnimatedSection variants={staggerContainer} className="container mx-auto px-4 py-24 md:py-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-semibold mb-6">
-          {landingData.artistsTitle}
+          {t("artists.title")}
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
-          {landingData.artistsContent}
+          {t("artists.content")}
         </p>
       </div>
 
@@ -43,8 +40,8 @@ export function ArtistsSection() {
         variants={staggerContainer}
         className="flex flex-row items-center justify-center gap-4"
       >
-        {artistsData.map((artist) => (
-          <motion.div key={artist.attributes.artist} variants={staggerChild}>
+        {artists.map((artist) => (
+          <motion.div key={artist.name} variants={staggerChild}>
             <ArtistCard artist={artist} />
           </motion.div>
         ))}

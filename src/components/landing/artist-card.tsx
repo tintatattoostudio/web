@@ -3,20 +3,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
-import API from '@/lib/api/client';
-import type { Artist } from '@/lib/api/types';
 import { motion } from 'framer-motion';
 import { scaleOnHover } from '@/lib/animations/variants';
+import { Artist } from '@/lib/types';
 
 type ArtistCardProps = {
   artist: Artist;
 };
 
 export function ArtistCard({ artist }: ArtistCardProps) {
-  const { name, bio, styles, pfp } = artist.attributes;
-  const imageUrl = API.getImageUrl(pfp.data.attributes.url);
-
-  const stylesArray = styles.split(',').map(s => s.trim()).filter(Boolean);
+  const { name, bio, styles, picture } = artist;
 
   return (
     <motion.div
@@ -27,7 +23,7 @@ export function ArtistCard({ artist }: ArtistCardProps) {
       <Card className="overflow-hidden h-full border-none shadow-md hover:shadow-2xl transition-shadow duration-400">
         <div className="relative w-full aspect-square">
           <Image
-            src={imageUrl}
+            src={picture}
             alt={name}
             fill
             className="object-cover"
@@ -43,9 +39,9 @@ export function ArtistCard({ artist }: ArtistCardProps) {
             {bio}
           </p>
 
-          {stylesArray.length > 0 && (
+          {styles.length > 0 && (
             <div className="flex flex-wrap gap-2">
-              {stylesArray.map((style, index) => (
+              {styles.map((style, index) => (
                 <Badge key={index} variant="secondary" className="text-xs">
                   {style}
                 </Badge>

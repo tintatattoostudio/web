@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
-import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { QueryProvider } from "@/lib/contexts/query-provider";
 import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";
 import { SwitchersBar } from "@/components/layout/switchers-bar";
@@ -10,6 +8,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+
+import "../globals.css";
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -41,6 +41,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
@@ -57,12 +58,10 @@ export default async function LocaleLayout({
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={messages}>
-            <QueryProvider>
-              {children}
-              <Footer />
-              <Navigation />
-              <SwitchersBar />
-            </QueryProvider>
+            {children}
+            <Footer />
+            <Navigation />
+            <SwitchersBar />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
