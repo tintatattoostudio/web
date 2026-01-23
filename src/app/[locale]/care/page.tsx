@@ -1,46 +1,51 @@
-'use client';
-
-import { useCareData } from '@/lib/hooks/use-care-data';
-import { ContentSegment } from '@/components/sections/content-segment';
-import { Skeleton } from '@/components/ui/skeleton';
+import { CareContentSegment } from '@/components/sections/content-segment';
 import { Separator } from '@/components/ui/separator';
 import { AnimatedSection } from '@/components/sections/animated-section';
 import { PageLayout } from '@/components/layout/page-layout';
+import { CareSection } from '@/lib/types';
+import { getTranslations } from 'next-intl/server';
 
-export default function CarePage() {
-  const { data, isLoading } = useCareData();
-
-  if (isLoading) {
-    return (
-      <PageLayout>
-        <main className="container mx-auto px-4 py-20 min-h-screen">
-          <Skeleton className="h-16 w-96 mb-12" />
-          <div className="space-y-6">
-            {[...Array(3)].map((_, i) => (
-              <Skeleton key={i} className="h-48 w-full" />
-            ))}
-          </div>
-        </main>
-      </PageLayout>
-    );
-  }
-
-  if (!data) return null;
-
+export default async function CarePage() {
+  const t = await getTranslations('care');
+  const sections: Array<CareSection> = [
+    {
+      title: t("sections.removingFoil.title"),
+      content: t("sections.removingFoil.content"),
+    },
+    {
+      title: t("sections.cleaning.title"),
+      content: t("sections.cleaning.content"),
+      listDescription: t("sections.cleaning.list.description"),
+      list: Array.from({ length: 4 }, (_, i) => t(`sections.cleaning.list.${i + 1}`)),
+    },
+    {
+      title: t("sections.sunbathing.title"),
+      content: t("sections.sunbathing.content"),
+    },
+    {
+      title: t("sections.recreation.title"),
+      content: t("sections.recreation.content"),
+    },
+    {
+      title: t("sections.others.title"),
+      list: Array.from({ length: 3 }, (_, i) => t(`sections.others.list.${i + 1}`)),
+      note: t("sections.others.note"),
+    },
+  ];
   return (
     <PageLayout>
       <main className="container mx-auto px-4 py-24 md:py-32 min-h-screen">
         <AnimatedSection>
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-semibold mb-16">{data.title}</h1>
+            <h1 className="text-4xl md:text-6xl font-semibold mb-16">{t("title")}</h1>
           </div>
         </AnimatedSection>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          {data.sections.map((section, index) => (
+          {sections.map((section, index) => (
             <div key={index}>
-              <ContentSegment segment={section} />
-              {index < data.sections.length - 1 && (
+              <CareContentSegment section={section} />
+              {index < sections.length - 1 && (
                 <Separator className="my-10" />
               )}
             </div>

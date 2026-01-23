@@ -68,8 +68,40 @@
   },
   "care": {
     "title": "Nega tetovaže",
-    "pageTitle": "Nega tetovaže",
-    "sections": []
+    "sections": {
+      "removingFoil": {
+        "title": "Odstranjevanje folije",
+        "content": "Tatu z navadno živilsko folijo odvijte po 3-5h. Tatu s second skin folijo ostane povit 1-3 dni. Folijo odstranite pod toplim tušem. Folijo odstranite tako, da jo razvlečete ob koži. Ko folijo odlepimo, operemo tattoo pod toplo vodo z antibakterijskim milom in ga nežno osušimo s kuhinjsko brisačo, pri tem pazimo, da ne drgnemo."
+      },
+      "cleaning": {
+        "title": "Umivanje in mazanje tetovaže",
+        "content": "Vedno preden se tatuja dotikate si najprej umijete roke z antibakterijskim milom. Nato z čistimi rokami pod toplo vodo umijete tudi tetovažo z antibakterijskim milom. Tetovaže nikoli ne drgnemo z brisačo, ampak jo potapkamo s kuhinjsko brisačo. Ko je tetovaža suha, nanjo nanesemo tanek sloj kreme, ki vam jo je priporočil tetover.",
+        "list": {
+          "description": "Skrb za svežo tetovažo je ključnega pomena za zagotovitev uspešnega celjenja in dolgotrajne obstojnosti umetniškega dela na koži.",
+          "1": "V prvem tednu po tetoviranju je potrebno posebno pozornost nameniti rednemu umivanju in vlaženju tetovaže, pri čemer se izogibajte dejavnostim, ki bi lahko dražile kožo, kot so športna vadba, izpostavljanje soncu, savna, solarij, kopanje in nečiste aktivnosti. Tetovažo namažemo in umijemo 2-3x na dan.",
+          "2": "V tem obdobju se bo tetovaža začela luščiti, kar je povsem normalen proces celjenja. Občutili boste tudi rahlo srbečico, vendar je pomembno, da ne trgate suhih barvnih delcev s sveže tetovaže. Če je srbečica neznosna, je priporočljivo nežno umivanje in nanašanje mazila, kar bo pomagalo umiriti kožo.",
+          "3": "V drugem tednu lahko zmanjšate pogostost umivanja in mazanja tetovaže na 1-2 krat dnevno, prilagajajoč se potrebam vaše kože. Ponovno lahko začnete s športno vadbo, pri čemer po vsaki vadbi temeljito operete tetovažo in po potrebi nanesete mazilo. Postopoma boste opazili umirjanje kože in srbečice.",
+          "4": "Čas, potreben za zacelitev tetovaže, lahko varira glede na različne dejavnike, vključno z velikostjo tetovaže, lokacijo na telesu, posameznikovim zdravstvenim stanjem, načinom in skrbjo za nego ter hitrostjo naravnega celjenja kože. V splošnem pa se lahko tetovaža zaceli v obdobju od 1-2 meseca. Tetovaža je zaceljena, ko se ne lušči več in je na otip enaka, kot ostala nepotetovirana koža."
+        }
+      },
+      "sunbathing": {
+        "title": "Sončenje in solarij",
+        "content": "Tetovaže ne izpostavljamo UV žarkom vsaj prvi mesec. Tudi ko je tattoo zaceljen je nanj še vedno treba paziti, če želite, da bo dolgo lep in intenziven. Na dolgi rok izpostavljanje tetovaže UV žarkom razgrajuje pigment ujet pod kožo, zato s sončenjem pripomorete k staranju in bledenju tetovaže. V primeru, da boste na soncu, ga je potrebno namazati s kremo z zaščitnim faktorjem 30-50 spf na vsakih par ur."
+      },
+      "recreation": {
+        "title": "Športna vadba, kopanje in savna",
+        "content": "Vsaj 10 dni se izogibajte vsakršni športni vadbi in potenju. En mesec se izogibajte kopanju in drugim namakanjem v vodi, morju ali bazenu ter savni."
+      },
+      "others": {
+        "title": "Ostali napotki",
+        "list": {
+          "1": "Uporabljajte negovalno kremo, ki vam jo je priporočil tetover (Easytattoo, Bepanthen mazilo, Tattoo care, Balea Tattoo).",
+          "2": "Čez svež tatu nosite ohlapna oblačila iz naravnih materialov, da tatuja ne dražite in drgnete.",
+          "3": "Najbolje je, da je tattoo čim več na svežem zraku."
+        },
+        "note": "Vaša nega je ključnega pomena kako bo tattoo izgledal celo življenje, zato priporočam, da se navodil držite. Ko je tatu v celoti zaceljen vas prosim, da mi pošljete fotografijo tatuja ali pa se dogovorite z menoj za kontrolo v studiu. Kontakte vsakega tetoverja najdete na spletni strani tinta.tattoo."
+      }
+    }
   },
   "faq": {
     "title": "Pogosta vprašanja",

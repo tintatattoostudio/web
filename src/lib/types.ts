@@ -16,3 +16,11 @@ export type InstructionsSection = {
   items: Array<string>;
   note?: string;
 }
+
+export type CareSection = {
+  title: string;
+  content?: string;
+  listDescription?: string;
+  list?: Array<string>;
+  note?: string;
+}

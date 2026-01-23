@@ -1,6 +1,39 @@
 {
   "care": {
-    "pageTitle": "Tattoo care",
+    "sections": {
+      "cleaning": {
+        "content": "Always wash your hands with antibacterial soap before touching your tattoo. Then, with clean hands under warm water, wash your tattoo with antibacterial soap. Never rub your tattoo with a towel, but pat it dry with a kitchen towel. When the tattoo is dry, apply a thin layer of cream recommended by your tattoo artist.",
+        "list": {
+          "1": "During the first week after tattooing, special attention should be paid to regular washing and moisturizing of the tattoo, while avoiding activities that could irritate the skin, such as sports, sun exposure, sauna, solarium, swimming and unclean activities. The tattoo should be lubricated and washed 2-3 times a day.",
+          "2": "During this period, the tattoo will begin to peel, which is a completely normal healing process. You will also feel a slight itch, but it is important not to pick at the dried paint particles from a fresh tattoo. If the itching is unbearable, it is recommended to gently wash and apply ointment, which will help soothe the skin.",
+          "3": "In the second week, you can reduce the frequency of washing and lubricating the tattoo to 1-2 times a day, adapting to the needs of your skin. You can resume sports training, washing the tattoo thoroughly after each workout and applying ointment if necessary. You will gradually notice the skin and itching calming down.",
+          "4": "The time it takes for a tattoo to heal can vary depending on a variety of factors, including the size of the tattoo, its location on the body, the individual's health, the care and maintenance of the tattoo, and the natural healing rate of the skin. In general, a tattoo can heal in 1-2 months. The tattoo is healed when it no longer peels and feels the same as the rest of the untattooed skin.",
+          "description": "Caring for a fresh tattoo is crucial to ensuring successful healing and long-lasting durability of the artwork on the skin."
+        },
+        "title": "Washing and lubricating the tattoo"
+      },
+      "others": {
+        "list": {
+          "1": "Use the care cream recommended by your tattoo artist (Easytattoo, Bepanthen ointment, Tattoo care, Balea Tattoo).",
+          "2": "Wear loose clothing made of natural materials over a fresh tattoo to avoid irritating and rubbing the tattoo.",
+          "3": "It's best to keep the tattoo in the fresh air as much as possible."
+        },
+        "note": "Your care is crucial to how your tattoo will look for the rest of your life, so I recommend that you follow the instructions. When the tattoo is fully healed, please send me a photo of the tattoo or arrange to have it checked in the studio. You can find the contact details of each tattoo artist on the website tinta.tattoo.",
+        "title": "Other instructions"
+      },
+      "recreation": {
+        "content": "Avoid any sports exercise and sweating for at least 10 days. Avoid swimming and other immersion in water, the sea or a swimming pool, and saunas for one month.",
+        "title": "Sports training, swimming and sauna"
+      },
+      "removingFoil": {
+        "content": "Unwrap the tattoo with regular cling film after 3-5 hours. The tattoo with second skin film remains wrapped for 1-3 days. Remove the film under a warm shower. Remove the film by stretching it along the skin. Once the film is peeled off, wash the tattoo under warm water with antibacterial soap and gently dry it with a kitchen towel, being careful not to rub.",
+        "title": "Removing the foil"
+      },
+      "sunbathing": {
+        "content": "We do not expose the tattoo to UV rays for at least the first month. Even when the tattoo is healed, it still needs to be taken care of if you want it to be beautiful and intense for a long time. In the long term, exposing the tattoo to UV rays breaks down the pigment trapped under the skin, so sunbathing contributes to the aging and fading of the tattoo. If you are going to be in the sun, it is necessary to apply a cream with a protection factor of 30-50 spf every few hours.",
+        "title": "Sunbathing and solarium"
+      }
+    },
     "title": "Tattoo care"
   },
   "common": {
