@@ -8,7 +8,6 @@
     "toggleTheme": "Switch theme"
   },
   "faq": {
-    "pageTitle": "Frequently asked questions",
     "sections": {
       "ageRestrictions": {
         "qa": {
@@ -121,8 +120,50 @@
     "location": "Location"
   },
   "instructions": {
-    "content": "Important information before your appointment",
-    "pageTitle": "Instructions before tattooing",
+    "description": "To make your new tattoo as beautiful as possible and to ensure that the tattooing process goes smoothly, we advise you to follow the recommendations below on how to care for your skin before the tattooing process itself.",
+    "sections": {
+      "day": {
+        "items": {
+          "1": "Please come alone or with a small group, as there are more of us in the studio and it can get crowded quickly (except for parents and guardians signing the consent form). A small group may come to the appointment, as long as they do not disrupt the work process.",
+          "2": "Come to the tattoo rested, well-fed, and hydrated.",
+          "3": "Come to the tattoo shop clean, washed, and fragrant.",
+          "4": "Do not come to the tattoo shop if you are sick or have a cold.",
+          "5": "Wear comfortable, loose-fitting everyday clothing so that the tattoo artist can reach the tattoo site more easily and you will be more comfortable during the tattooing process.",
+          "6": "For longer appointments, bring plenty of fluids (sweet drinks) and snacks."
+        },
+        "note": "If you have any illnesses, allergies, or are taking medication, please consult your doctor or contact us.",
+        "title": "On tattoo day"
+      },
+      "instructions": {
+        "items": {
+          "1": "Be punctual or at most 5 minutes early.",
+          "2": "Do not come to your appointment if you are sick or have a cold.",
+          "3": "Trust your tattoo artist if they tell you something isn't feasible, won't last long, or won't look good.",
+          "4": "Don't be afraid to ask if the stencil can be moved, enlarged, reduced, changed. We are here to help and accommodate you. We understand that tattoos are permanent, so we ask that you express your wishes while changes are still possible. Express your fears, doubts, discomfort.",
+          "5": "If you want to document and share the tattooing process and your experience on your phone, ask the tattoo artist for permission first.",
+          "6": "During the tattooing process, please inform us about your well-being. Express your needs for food, drink, and breaks. Let us know if you feel dizzy, nauseous, sweat excessively, or are shaking. Let us know if you are cold or too hot. Let us know if the pain is too severe.",
+          "7": "A small group of people may come to the appointment, as long as they do not disrupt the work process itself.",
+          "8": "In case of cancellation or concerns, please let us know."
+        },
+        "title": "Customer instructions"
+      },
+      "month": {
+        "items": {
+          "1": "Don't sunbathe, don't go to a tanning bed."
+        },
+        "title": "At least 1 month before tattooing"
+      },
+      "week": {
+        "items": {
+          "1": "Do not consume drugs or alcohol for at least 24 hours before tattooing (it causes excessive bleeding and makes healing difficult - scabs).",
+          "2": "Do not shave or depilate the tattoo site to avoid further irritating the skin.",
+          "3": "You can apply body milk/lotion to the tattoo site several times if you have dry skin, but do not apply 1 day before the tattoo.",
+          "4": "For extremely dry skin, exfoliate the tattoo area daily for three days before your tattoo and apply moisturizer. This will help the skin become more supple and pliable.",
+          "5": "Drink plenty of water."
+        },
+        "title": "At least 1 week before tattooing"
+      }
+    },
     "title": "Instructions before tattooing"
   },
   "landing": {

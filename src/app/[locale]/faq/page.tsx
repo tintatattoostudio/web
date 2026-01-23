@@ -8,7 +8,7 @@ import { getTranslations } from 'next-intl/server';
 export default async function FAQPage() {
   const t = await getTranslations('faq');
 
-  const sections: FAQSection[] = [
+  const sections: Array<FAQSection> = [
     {
       title: t("sections.common.title"),
       qa: Array.from({ length: 6 }, (_, i) => {
@@ -76,7 +76,7 @@ export default async function FAQPage() {
         <AnimatedSection>
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-semibold mb-16">
-              {t('pageTitle')}
+              {t('title')}
             </h1>
           </div>
         </AnimatedSection>

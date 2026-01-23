@@ -21,9 +21,50 @@
   },
   "instructions": {
     "title": "Navodila pred tetovažo",
-    "pageTitle": "Navodila pred tetovažo",
-    "content": "Pomembne informacije pred vašim terminom",
-    "segments": []
+    "description": "Da bo vaš novi tattoo kar se da lep in bo samo tetoviranje potekalo brez težav vam svetujemo, da upoštevate spodnja priporočila kako skrbeti za kožo pred samim postopkom tetoviranja.",
+    "sections": {
+      "month": {
+        "title": "Vsaj 1 mesec pred tetoviranjem",
+        "items": {
+          "1": "Se ne sončite, ne hodite v solarij."
+        }
+      },
+      "week": {
+        "title": "Vsaj 1 teden pred tetoviranjem",
+        "items": {
+          "1": "Ne uživajte drog in alkohola vsaj 24 ur pred tetoviranjem (povzroča prekomerno krvavenje in otežuje celjenje - kraste).",
+          "2": "Mesta tetovaže ne brijete ali depilirate, da dodatno ne dražite kože.",
+          "3": "Mesto tetovaže lahko večkrat namažete z mlekom/losjonom za telo, če imate suho kožo, vendar ne mažite 1 dan pred tetoviranjem.",
+          "4": "Za izjemno suho kožo tri dni pred tetoviranjem vsakodnevno na mestu, kjer bo tatu naredite piling in kožo navlažite z vlažilno kremo. To omogoča, da bo koža bolj prožna in voljna.",
+          "5": "Pijte veliko vode."
+        }
+      },
+      "day": {
+        "title": "Na dan tetoviranja",
+        "items": {
+          "1": "Prosimo, da pridete sami ali pa z manjšim spremstvom, saj nas je v studiu več in hitro nastane gneča (izjema so starši in skrbniki za podpis soglasja). Na termin lahko pride manjše spremstvo, le v kolikor ne motijo samega delovnega procesa.",
+          "2": "Na tatu pridite spočiti, dobro nahranjeni in hidrirani.",
+          "3": "Na tatu pridite čisti, umiti in dišeči.",
+          "4": "Na tatu ne prihajajte bolni ali prehlajeni.",
+          "5": "Nosite udobna, ohlapna vsakodnevna oblačila, da lahko tetover lažje doseže mesto tetovaže, vam pa bo bolj udobno med samim procesom tetoviranja.",
+          "6": "Za daljše termine prinesite s seboj veliko tekočine (sladka pijača) in prigrizke."
+        },
+        "note": "Če imate kakšne bolezni, alergije ali jemljete zdravila se pred tem posvetujte s svojim zdravnikom ali pa nas kontaktirajte."
+      },
+      "instructions": {
+        "title": "Navodila za stranke",
+        "items": {
+          "1": "Bodite točni ali pa najdlje 5 minut prezgodnji.",
+          "2": "Na termin ne prihajajte bolni ali prehlajeni.",
+          "3": "Zaupajte tetoverju, če vam pove, da nekaj ni izvedljivo, se ne bo dobro obdržalo skozi daljše časovno obdobje ali pa ne bo izgledalo dobro.",
+          "4": "Naj vas ne bo strah vprašati, če se lahko stencil prestavi, poveča, zmanjša, spremeni. Tu smo, da vam pomagamo in ustrežemo. Zavedamo se, da so tatuji permanentni, zato vas naprošamo, da izrazite svoje želje, dokler so spremembe še mogoče. Izrazite strahove, dvome, nelagodje.",
+          "5": "Če želite postopek tetoviranja in svojo izkušnjo dokumentirati in deliti s telefonom prej za dovoljenje vprašajte tetoverja.",
+          "6": "Med samim procesom tetoviranja nas obveščajte o svojem počutju. Izrazite svoje potrebe po hrani, pijači, pavzi. Obvestite nas, če imate vrtoglavico, slabost, se prekomerno potite ali se tresete. Obvestite nas če vas zebe ali vam je prevroče. Izrazite nam, če je bolečina prehuda.",
+          "7": "Na termin lahko pride manjše spremstvo, v kolikor ne motijo samega delovnega procesa.",
+          "8": "V primeru odpovedi ali pomislekov nas prosim obvestite."
+        }
+      }
+    }
   },
   "care": {
     "title": "Nega tetovaže",
@@ -32,7 +73,6 @@
   },
   "faq": {
     "title": "Pogosta vprašanja",
-    "pageTitle": "Pogosta vprašanja",
     "sections": {
       "common": {
         "title": "Splošne informacije in kontakt",

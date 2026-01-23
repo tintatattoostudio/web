@@ -10,3 +10,9 @@ export type FAQSection = {
   description?: string;
   qa: Array<FAQSectionQA>;
 };
+
+export type InstructionsSection = {
+  title: string;
+  items: Array<string>;
+  note?: string;
+}
