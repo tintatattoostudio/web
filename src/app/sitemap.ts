@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 
-const baseUrl = 'https://tinta.tattoo'; // Update with actual domain
+const baseUrl = 'https://next.tinta.tattoo'; // Update with actual domain
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = routing.locales;
