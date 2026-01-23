@@ -9,9 +9,10 @@ import { Artist } from '@/lib/types';
 
 type ArtistCardProps = {
   artist: Artist;
+  onClick?: () => void;
 };
 
-export function ArtistCard({ artist }: ArtistCardProps) {
+export function ArtistCard({ artist, onClick }: ArtistCardProps) {
   const { name, bio, styles, picture } = artist;
 
   return (
@@ -20,8 +21,9 @@ export function ArtistCard({ artist }: ArtistCardProps) {
       whileHover="hover"
       variants={magneticHover}
       className="will-change-transform"
+      onClick={onClick}
     >
-      <Card className="overflow-hidden h-full glass shadow-lg hover:shadow-2xl transition-shadow duration-500 max-w-sm">
+      <Card className="overflow-hidden h-full glass shadow-lg hover:shadow-2xl transition-shadow duration-500 max-w-sm cursor-pointer">
         <motion.div
           variants={{
             rest: { scale: 1 },

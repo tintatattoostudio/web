@@ -1,7 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import { AnimatedSection } from '@/components/sections/animated-section';
 import { ArtistCard } from './artist-card';
+import { ArtistDrawer } from './artist-drawer';
 import { staggerContainer, staggerChild } from '@/lib/animations/variants';
 import { motion } from 'framer-motion';
 import { Artist } from '@/lib/types';
@@ -21,6 +23,8 @@ const artistsStaggerContainer = {
 
 export function ArtistsSection() {
   const t = useTranslations("landing");
+  const [selectedArtist, setSelectedArtist] = useState<Artist | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const artists: Array<Artist> = [
     {
@@ -35,7 +39,12 @@ export function ArtistsSection() {
       styles: Array.from({ length: 2 }, (_, i) => t(`artists.list.milly.styles.${i + 1}`)),
       picture: '/milly.jpg',
     },
-  ]
+  ];
+
+  const handleArtistClick = (artist: Artist) => {
+    setSelectedArtist(artist);
+    setDrawerOpen(true);
+  };
 
   return (
     <AnimatedSection variants={staggerContainer} className="container mx-auto px-4 py-24 md:py-32">
@@ -75,10 +84,19 @@ export function ArtistsSection() {
       >
         {artists.map((artist) => (
           <motion.div key={artist.name} variants={staggerChild}>
-            <ArtistCard artist={artist} />
+            <ArtistCard
+              artist={artist}
+              onClick={() => handleArtistClick(artist)}
+            />
           </motion.div>
         ))}
       </motion.div>
+
+      <ArtistDrawer
+        artist={selectedArtist}
+        open={drawerOpen}
+        onOpenChange={setDrawerOpen}
+      />
     </AnimatedSection>
   );
 }
