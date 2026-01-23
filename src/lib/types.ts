@@ -30,4 +30,5 @@ export type Artist = {
   bio: string;
   styles: Array<string>;
   picture: string;
+  ig: string;
 }

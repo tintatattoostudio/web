@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { Artist } from '@/lib/types';
 import { motion } from 'framer-motion';
 import { staggerFadeIn, staggerChild } from '@/lib/animations/variants';
+import Link from 'next/link';
 
 type ArtistDrawerProps = {
   artist: Artist | null;
@@ -19,7 +20,11 @@ type ArtistDrawerProps = {
   onOpenChange: (open: boolean) => void;
 };
 
-export function ArtistDrawer({ artist, open, onOpenChange }: ArtistDrawerProps) {
+export function ArtistDrawer({
+  artist,
+  open,
+  onOpenChange,
+}: ArtistDrawerProps) {
   if (!artist) return null;
 
   return (
@@ -42,6 +47,21 @@ export function ArtistDrawer({ artist, open, onOpenChange }: ArtistDrawerProps) 
                   {artist.name}
                 </SheetTitle>
 
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={staggerFadeIn}
+                  className="flex flex-wrap gap-2 mt-3"
+                >
+                  <Link
+                    href={artist.ig}
+                    target="_blank"
+                    className="text-sm hover:underline transition-all"
+                  >
+                    instagram
+                  </Link>
+                </motion.div>
+
                 {artist.styles.length > 0 && (
                   <motion.div
                     initial="hidden"
@@ -60,8 +80,10 @@ export function ArtistDrawer({ artist, open, onOpenChange }: ArtistDrawerProps) 
                 )}
               </div>
 
-              <SheetDescription className="text-base md:text-lg leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: artist.bio }}>
-              </SheetDescription>
+              <SheetDescription
+                className="text-base md:text-lg leading-relaxed whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: artist.bio }}
+              ></SheetDescription>
             </div>
           </div>
         </SheetHeader>

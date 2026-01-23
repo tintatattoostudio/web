@@ -19,12 +19,14 @@ export function ArtistsSection() {
       bio: t("artists.list.lana.bio"),
       styles: Array.from({ length: 3 }, (_, i) => t(`artists.list.lana.styles.${i + 1}`)),
       picture: '/lana.jpg',
+      ig: 'https://www.instagram.com/taro_tattoo_/'
     },
     {
       name: t("artists.list.milly.name"),
       bio: t("artists.list.milly.bio"),
       styles: Array.from({ length: 2 }, (_, i) => t(`artists.list.milly.styles.${i + 1}`)),
       picture: '/milly.jpg',
+      ig: 'https://www.instagram.com/milly_tattoos/'
     },
   ];
 
