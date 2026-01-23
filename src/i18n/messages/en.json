@@ -212,9 +212,10 @@
           "bio": "My tattoo style is defined by a variety of lines, lots of black areas, strong contrasts, fine details and soft shadows. I enjoy creating a variety of motifs, which I can add my own touch to and thus present in my own unique way. I am fascinated by mythological and mystical themes, I try to bring elements of magic and nature into my tattoos. The goal of my tattoos is to be as fluid and harmonious as possible with every body I get on canvas.",
           "name": "Lana",
           "styles": {
-            "1": "Linework",
-            "2": "Illustrative",
-            "3": "Blackwork"
+            "1": "Anime",
+            "2": "Fine line",
+            "3": "Cybersigilism",
+            "4": "Blackwork"
           }
         },
         "milly": {

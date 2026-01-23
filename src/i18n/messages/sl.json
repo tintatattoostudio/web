@@ -23,9 +23,10 @@
           "name": "Lana",
           "bio": "Moj stil tetoviranja definirajo raznovrstne linije, veliko črnih ploskev, močni kontrasti, fini detajli ter blage sence. Uživam ob ustvarjanju raznovrstnih motivov, ki jim lahko dodam svoj pridih in jih s tem prikažem na svoj lasten unikaten način. Fascinirajo me mitološke in mistične vsebine, v tatuje poskušam vnesti elemente magije in narave. Cilj mojih tetovaž je, da so čim bolj tekoče in skladne z vsakim telesom, ki ga dobim za platno.",
           "styles": {
-            "1": "Linework",
-            "2": "Illustrative",
-            "3": "Blackwork"
+            "1": "Anime",
+            "2": "Fine line",
+            "3": "Cybersigilism",
+            "4": "Blackwork"
           }
         },
         "milly": {

@@ -17,7 +17,7 @@ export function ArtistsSection() {
     {
       name: t("artists.list.lana.name"),
       bio: t("artists.list.lana.bio"),
-      styles: Array.from({ length: 3 }, (_, i) => t(`artists.list.lana.styles.${i + 1}`)),
+      styles: Array.from({ length: 4 }, (_, i) => t(`artists.list.lana.styles.${i + 1}`)),
       picture: '/lana.jpg',
       ig: 'https://www.instagram.com/taro_tattoo_/'
     },
