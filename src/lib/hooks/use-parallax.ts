@@ -4,7 +4,7 @@ import { useRef } from 'react';
 export function useParallax(
   distance: number = 50
 ): {
-  ref: React.RefObject<HTMLDivElement>;
+  ref: React.RefObject<HTMLDivElement | null>;
   y: MotionValue<number>;
 } {
   const ref = useRef<HTMLDivElement>(null);
