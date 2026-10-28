@@ -27,8 +27,10 @@ export type CareSection = {
 
 export type Artist = {
   name: string;
-  bio: string;
-  styles: Array<string>;
+  alias: string;
+  since: number;
+  specialties: Array<string>;
+  instagram: string;
   picture: string;
-  ig: string;
+  textSide: 'left' | 'right';
 }

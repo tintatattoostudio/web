@@ -1,47 +1,65 @@
 'use client';
 
-import { useState } from 'react';
+import type { CSSProperties } from 'react';
+import { motion } from 'framer-motion';
 import { AnimatedSection } from '@/components/sections/animated-section';
 import { ArtistCard } from './artist-card';
-import { ArtistDrawer } from './artist-drawer';
-import { fadeInUp } from '@/lib/animations/variants';
+import { fadeInUp, staggerChild } from '@/lib/animations/variants';
 import { Artist } from '@/lib/types';
 import { useTranslations } from 'next-intl';
 
 export function ArtistsSection() {
   const t = useTranslations("landing");
-  const [selectedArtist, setSelectedArtist] = useState<Artist | null>(null);
-  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const specialties = (key: string, count: number) =>
+    Array.from({ length: count }, (_, i) => t(`artists.list.${key}.specialties.${i + 1}`));
 
   const artists: Array<Artist> = [
     {
       name: t("artists.list.lana.name"),
-      bio: t("artists.list.lana.bio"),
-      styles: Array.from({ length: 4 }, (_, i) => t(`artists.list.lana.styles.${i + 1}`)),
-      picture: '/lana.jpg',
-      ig: 'https://www.instagram.com/taro_tattoo_/'
+      alias: t("artists.list.lana.alias"),
+      since: 2019,
+      specialties: specialties('lana', 4),
+      instagram: 'taro_tattoo_',
+      picture: '/artists/lana.jpeg',
+      textSide: 'right'
     },
     {
-      name: t("artists.list.milly.name"),
-      bio: t("artists.list.milly.bio"),
-      styles: Array.from({ length: 2 }, (_, i) => t(`artists.list.milly.styles.${i + 1}`)),
-      picture: '/milly.jpg',
-      ig: 'https://www.instagram.com/milly_tattoos/'
+      name: t("artists.list.milan.name"),
+      alias: t("artists.list.milan.alias"),
+      since: 2013,
+      specialties: specialties('milan', 2),
+      instagram: 'milly_tattoos',
+      picture: '/artists/milan.jpeg',
+      textSide: 'left'
+    },
+    {
+      name: t("artists.list.mito.name"),
+      alias: t("artists.list.mito.alias"),
+      since: 2014,
+      specialties: specialties('mito', 2),
+      instagram: 'mitopir',
+      picture: '/artists/mito.jpeg',
+      textSide: 'left'
+    },
+    {
+      name: t("artists.list.nejc.name"),
+      alias: t("artists.list.nejc.alias"),
+      since: 2021,
+      specialties: specialties('nejc', 3),
+      instagram: 'brahma.tattoos',
+      picture: '/artists/nejc.jpeg',
+      textSide: 'right'
     },
   ];
 
-  const handleArtistClick = (artist: Artist) => {
-    setSelectedArtist(artist);
-    setDrawerOpen(true);
-  };
-
   return (
-    <AnimatedSection
-      variants={fadeInUp}
-      className="container mx-auto px-4 py-24 md:py-32"
-      threshold={0.1}
-    >
-      <div className="text-center mb-16">
+    <section className="container mx-auto px-4 py-24 md:py-32">
+      <AnimatedSection
+        variants={fadeInUp}
+        className="text-center mb-16"
+        threshold={0.1}
+      >
         <h2 className="text-3xl md:text-5xl font-semibold mb-6">
           {t("artists.title")}
         </h2>
@@ -51,24 +69,26 @@ export function ArtistsSection() {
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto whitespace-pre-line leading-relaxed">
           {t("artists.content2")}
         </p>
-      </div>
+      </AnimatedSection>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+      {/* Up to 4 artists share one row on xl; beyond that split into two rows (5 -> 3/2) */}
+      <div
+        className="flex flex-wrap justify-center gap-6"
+        style={{ '--cols': artists.length <= 4 ? artists.length : Math.ceil(artists.length / 2) } as CSSProperties}
+      >
         {artists.map((artist) => (
-          <div key={artist.name}>
-            <ArtistCard
-              artist={artist}
-              onClick={() => handleArtistClick(artist)}
-            />
-          </div>
+          <motion.div
+            key={artist.instagram}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={staggerChild}
+            className="w-full max-w-sm md:basis-[calc((100%-1.5rem)/2)] xl:basis-[calc((100%-(var(--cols)-1)*1.5rem)/var(--cols))] xl:max-w-80"
+          >
+            <ArtistCard artist={artist} />
+          </motion.div>
         ))}
       </div>
-
-      <ArtistDrawer
-        artist={selectedArtist}
-        open={drawerOpen}
-        onOpenChange={setDrawerOpen}
-      />
-    </AnimatedSection>
+    </section>
   );
 }

@@ -21,23 +21,43 @@
       "list": {
         "lana": {
           "name": "Lana",
-          "bio": "Moj stil tetoviranja definirajo raznovrstne linije, veliko črnih ploskev, močni kontrasti, fini detajli ter blage sence. Uživam ob ustvarjanju raznovrstnih motivov, ki jim lahko dodam svoj pridih in jih s tem prikažem na svoj lasten unikaten način. Fascinirajo me mitološke in mistične vsebine, v tatuje poskušam vnesti elemente magije in narave. Cilj mojih tetovaž je, da so čim bolj tekoče in skladne z vsakim telesom, ki ga dobim za platno.",
-          "styles": {
-            "1": "Anime",
-            "2": "Fine line",
-            "3": "Cybersigilism",
-            "4": "Blackwork"
+          "alias": "Taro tattoo",
+          "specialties": {
+            "1": "anime",
+            "2": "dark illustrative",
+            "3": "fineline",
+            "4": "cybersigilism"
           }
         },
-        "milly": {
+        "milan": {
           "name": "Milan",
-          "bio": "Milan je vsestranski tetover, specializiran za področje black and grey realizem in fineline realizem. Izjemno pomembnost posveča izdelavi dolgoročne kvalitetne tetovaže. S svojim poznavanjem kompozicije, anatomije, oblik in drugih likovnih elementov, ki določajo kakovosten kos, vedno pomaga strankam, ustvariti željen motiv tako, kot so si jih zamislile.<br/>O svojem delu pravi:<br/>Tetoviranje je zame način povezovanja s svetom. Način, kako umetniki pomagajo ljudem, da se izrazijo s tetovažami, je unikaten. Umetnik nenehno poskuša najti ravnotežje, da bi se izrazil skozi kožo. Umetniki na ljudeh ustvarjajo simbolične ali abstraktne oblike in odpirajo in privzdigujejo tisto, kar ljudje čutijo ali mislijo globoko v svoji koži. Dandanes ima vsak vsaj majhen košček kože, ki je prekrit s črnilom, in to je neverjetno!<br/><br/>\"Rad vstanem vsako jutro in počnem to, kar imam rad\".",
-          "styles": {
-            "1": "Black and gray realizem",
-            "2": "Fineline realizem"
+          "alias": "Milly tattoos",
+          "specialties": {
+            "1": "black & grey realism",
+            "2": "fineline"
+          }
+        },
+        "mito": {
+          "name": "Mito",
+          "alias": "Mitopir",
+          "specialties": {
+            "1": "traditional",
+            "2": "bold ornamental"
+          }
+        },
+        "nejc": {
+          "name": "Nejc",
+          "alias": "Brahma tattoos",
+          "specialties": {
+            "1": "traditional",
+            "2": "japanese",
+            "3": "tribal"
           }
         }
-      }
+      },
+      "since": "Tetoviram od {year}",
+      "specialty": "Specialnost:",
+      "booking": "Naročanje:"
     }
   },
   "instructions": {

@@ -209,25 +209,45 @@
       "content2": "Our diverse backgrounds and artistic styles allow us to cater to a wide range of preferences. We know that each individual is unique, so we strive to create a unique piece of art designed specifically for them. Whether you are looking for a traditional painting or a contemporary masterpiece, we have the expertise and imagination to exceed your expectations.",
       "list": {
         "lana": {
-          "bio": "My tattoo style is defined by a variety of lines, lots of black areas, strong contrasts, fine details and soft shadows. I enjoy creating a variety of motifs, which I can add my own touch to and thus present in my own unique way. I am fascinated by mythological and mystical themes, I try to bring elements of magic and nature into my tattoos. The goal of my tattoos is to be as fluid and harmonious as possible with every body I get on canvas.",
           "name": "Lana",
-          "styles": {
-            "1": "Anime",
-            "2": "Fine line",
-            "3": "Cybersigilism",
-            "4": "Blackwork"
+          "alias": "Taro tattoo",
+          "specialties": {
+            "1": "anime",
+            "2": "dark illustrative",
+            "3": "fineline",
+            "4": "cybersigilism"
           }
         },
-        "milly": {
-          "bio": "Milan is a versatile tattoo artist, specializing in black and grey realism and fineline realism. He places great importance on creating long-lasting, quality tattoos. With his knowledge of composition, anatomy, shapes and other artistic elements that define a quality piece, he always helps his clients create the desired motif exactly as they imagined it.<br/> He says about his work:<br/> Tattooing is a way for me to connect with the world. The way artists help people express themselves through tattoos is unique. The artist is constantly trying to find a balance to express themselves through their skin. Artists create symbolic or abstract forms on people and open up and elevate what people feel or think deep inside their skin. Nowadays, everyone has at least a small piece of skin covered in ink, and it's amazing!<br/><br/> &quot;I love getting up every morning and doing what I love.&quot;",
+        "milan": {
           "name": "Milan",
-          "styles": {
-            "1": "Black and gray realism",
-            "2": "Fineline realism"
+          "alias": "Milly tattoos",
+          "specialties": {
+            "1": "black & grey realism",
+            "2": "fineline"
+          }
+        },
+        "mito": {
+          "name": "Mito",
+          "alias": "Mitopir",
+          "specialties": {
+            "1": "traditional",
+            "2": "bold ornamental"
+          }
+        },
+        "nejc": {
+          "name": "Nejc",
+          "alias": "Brahma tattoos",
+          "specialties": {
+            "1": "traditional",
+            "2": "japanese",
+            "3": "tribal"
           }
         }
       },
-      "title": "Our artists"
+      "title": "Our artists",
+      "since": "Tattooing since {year}",
+      "specialty": "Specialty:",
+      "booking": "Booking:"
     },
     "hero": {
       "subtitle": "Ljubljana, Slovenia",
